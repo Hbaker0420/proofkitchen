@@ -1,7 +1,7 @@
 # ProofKitchen
 
-Inspection-ready restaurant logs and cited city FOG/hood rules for independent restaurants.
+Inspection-ready restaurant logs and cited city FOG/hood rules.
 
 Live: https://hbaker0420.github.io/proofkitchen/
 
-Not legal advice. Verify rules with the authority having jurisdiction.
+Checkout is live on the Pricing page (Stripe). Not legal advice.
