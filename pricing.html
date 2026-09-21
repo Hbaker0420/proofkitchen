@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pricing — ProofKitchen</title>
-  <meta name="description" content="Free restaurant inspection logs. Pro $149/year. Vendor alerts $129/month per metro.">
+  <meta name="description" content="Free restaurant inspection logs. Founding Pro $99/year. Vendor alerts $129/month per metro.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/app.css">
@@ -33,22 +33,27 @@
   </article>
   <article class="card">
     <h3>Pro kitchen</h3>
-    <div class="price">$149<span style="font-size:18px">/yr</span></div>
-    <p>Founding $99/year for the first 50. Email reminders, cloud backup, inspector link. Payments not live yet — join below.</p>
-    <form onsubmit="event.preventDefault();const s=loadState();s.waitlist=s.waitlist||[];s.waitlist.push({type:'pro',email:this.email.value,at:new Date().toISOString()});saveState(s);this.after.textContent='Saved locally. We will enable checkout after Stripe is connected.';">
-      <label>Email</label><input name="email" type="email" required>
-      <div class="toolbar"><button class="btn stamp" type="submit">Hold founding price</button></div>
-      <p class="fine" id="after"></p>
-    </form>
+    <div class="price">$99<span style="font-size:18px">/yr</span></div>
+    <p>Founding price, then $149/year. Logbook now; email reminders when sending is connected. Cancel anytime in Stripe.</p>
+    <div class="toolbar">
+      <a class="btn stamp" href="https://buy.stripe.com/4gM5kE0gA0Xvgq5c8s5wI01">Start founding Pro</a>
+      <a class="btn secondary" href="https://buy.stripe.com/8x2bJ25AU5dL6PvgoI5wI02">Pay $149/year</a>
+    </div>
+    <p class="fine" id="paid-msg"></p>
   </article>
   <article class="card">
     <h3>Vendor alerts</h3>
     <div class="price">$129<span style="font-size:18px">/mo</span></div>
     <p>One metro. Typed public-inspection matches. No phone append. <a href="vendors.html">Details</a></p>
-    <a class="btn" href="inspect.html">Search + waitlist</a>
+    <a class="btn" href="https://buy.stripe.com/9B66oI3sMgWt3Dj5K45wI03">Subscribe</a>
   </article>
 </div>
 <script src="assets/common.js"></script>
+<script>
+if (new URLSearchParams(location.search).get("paid")) {
+  document.getElementById("paid-msg").textContent = "Payment received — thank you. Keep using the free logbook in this browser; reminders ship next.";
+}
+</script>
 
     <footer class="site">
       <p>ProofKitchen is an information tool, not a lawyer, inspector, or city agency. Always keep original manifests and confirm rules with the AHJ. Data: NYC DOHMH and Chicago CDPH open data; city ordinance pages cited on each guide.</p>
