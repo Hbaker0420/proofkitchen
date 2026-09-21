@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hbaker0420.github.io/proofkitchen/sitemap.xml
