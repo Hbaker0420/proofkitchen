@@ -47,15 +47,18 @@
 <div id="results" class="stack" style="margin-top:16px"></div>
 <div class="card" style="margin-top:24px">
   <h3>Vendors: daily typed digest</h3>
-  <p>Founding rate $129/month per metro when billing is on. Leave your details.</p>
+  <p>Founding rate $129/month per metro. Search is free. Subscribe when the digest is worth a single job.</p>
+  <div class="toolbar">
+    <a class="btn stamp" href="https://buy.stripe.com/9B66oI3sMgWt3Dj5K45wI03">Subscribe — $129/mo</a>
+  </div>
   <form id="vendor-form">
-    <label>Name</label><input id="v-name" required>
-    <label>Email</label><input id="v-email" type="email" required>
+    <label>Name (waitlist if you are not ready)</label><input id="v-name">
+    <label>Email</label><input id="v-email" type="email">
     <label>Metro</label>
     <select id="v-metro"><option>NYC</option><option>Chicago</option><option>Both</option></select>
     <label>Trade</label>
     <select id="v-trade"><option>Pest control</option><option>Grease pumping</option><option>Hood cleaning</option><option>Fire suppression</option></select>
-    <div class="toolbar"><button class="btn" type="submit">Join founding waitlist</button></div>
+    <div class="toolbar"><button class="btn secondary" type="submit">Save waitlist locally</button></div>
   </form>
   <p class="fine" id="vendor-msg"></p>
 </div>
