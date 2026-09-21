@@ -1,0 +1,175 @@
+{
+  "disclaimer": "Not legal advice. Verify with the authority having jurisdiction before relying on a schedule.",
+  "nfpa96": {
+    "title": "Kitchen exhaust cleaning frequency (NFPA 96, widely republished by fire departments)",
+    "rows": [
+      {"volume": "Solid fuel cooking (wood, charcoal)", "frequency": "Monthly", "days": 30},
+      {"volume": "High-volume (wok, 24h, charbroil, steam)", "frequency": "Quarterly", "days": 90},
+      {"volume": "Moderate-volume", "frequency": "Semiannually", "days": 182},
+      {"volume": "Low-volume (churches, day camps, seasonal)", "frequency": "Annually", "days": 365}
+    ],
+    "note": "AHJs and insurers may require more frequent cleaning. Keep contractor certificates on site."
+  },
+  "cities": [
+    {
+      "slug": "houston",
+      "name": "Houston, TX",
+      "state": "TX",
+      "agency": "Houston Health Department — Special Waste / FOG Program",
+      "verified": "2026-09-21",
+      "confidence": "high",
+      "sources": [
+        {"label": "Houston Health Department FOG / special waste", "url": "https://www.houstonhealth.org/services/permits/special-waste-permits"},
+        {"label": "Code of Ordinances §47-512 (cleaning and maintenance)", "url": "http://houston-tx.elaws.us/code/coor_ch47_artxi_div9_subdiv1_sec47-512"}
+      ],
+      "pumping": {
+        "minimumDays": 90,
+        "accumulationRule": "Pump sooner if floating grease + solids reach 25% of wetted height, or if effluent limits are exceeded.",
+        "waiver": "A 180-day waiver may be available after 12 months of 90-day history and demonstrated <25% accumulation.",
+        "retentionYears": 5,
+        "hauler": "City-permitted transporter only. Generator signs the manifest and keeps copies on site.",
+        "permit": "Annual FOG / special waste generator permit; keep on site."
+      },
+      "fines": "Citations commonly described in the $250–$2,000 per offense range — confirm current amounts with the city.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
+        {"type": "health_permit", "label": "Health / food dealer permit", "intervalDays": 365}
+      ]
+    },
+    {
+      "slug": "austin",
+      "name": "Austin, TX",
+      "state": "TX",
+      "agency": "Austin Water — Grease Trap Maintenance",
+      "verified": "2026-09-21",
+      "confidence": "high",
+      "sources": [
+        {"label": "Austin Water grease trap maintenance", "url": "https://www.austintexas.gov/water/grease-trap-maintenance"}
+      ],
+      "pumping": {
+        "minimumDays": 90,
+        "accumulationRule": "Clean more often if grease and solids are 50% or more of wetted height (bottom of trap to invert of outlet).",
+        "waiver": "Applications exist to reduce frequency below 90 days if compliance criteria are met.",
+        "retentionYears": 3,
+        "hauler": "City of Austin-permitted liquid waste hauler only.",
+        "permit": "Follow Austin Water FOG / trap registration rules for your site."
+      },
+      "fines": "Fines and permit action are possible. Confirm current penalties with Austin Water / 311.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease trap", "intervalDays": 90},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
+        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+      ]
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas, TX",
+      "state": "TX",
+      "agency": "Dallas Water Utilities — Liquid Waste / Pretreatment",
+      "verified": "2026-09-21",
+      "confidence": "high",
+      "sources": [
+        {"label": "Dallas Water Utilities pretreatment FAQs", "url": "https://dallascityhall.com/departments/waterutilities/pretreatmentprogram/Pages/faqs2.aspx"}
+      ],
+      "pumping": {
+        "minimumDays": 90,
+        "accumulationRule": "Pump sooner whenever floating FOG plus settled solids reach 25% of design capacity / liquid depth.",
+        "waiver": null,
+        "retentionYears": 3,
+        "hauler": "City of Dallas-permitted liquid waste transporter. Keep manifests on site.",
+        "permit": "Liquid waste generator requirements per Chapter 19 — confirm your permit status."
+      },
+      "fines": "Inspectors issue citations for missed pumping, bad manifests, or over-25% accumulation. Confirm current fine schedule.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
+        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+      ]
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago, IL",
+      "state": "IL",
+      "agency": "Chicago Department of Water Management / Plumbing Code; CDPH food inspections",
+      "verified": "2026-09-21",
+      "confidence": "medium",
+      "sources": [
+        {"label": "Chicago FOG control program", "url": "https://www.chicago.gov/city/en/depts/water/supp_info/fats-oils-and-grease-fog-control-program.html"},
+        {"label": "Municipal Code interceptors maintenance (18-29-1003.13)", "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2696529"},
+        {"label": "Chicago food inspections open data", "url": "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5"}
+      ],
+      "pumping": {
+        "minimumDays": null,
+        "accumulationRule": "Chicago plumbing code requires interceptors to be maintained 'as often as necessary' — not a fixed 90-day clock. Keep written maintenance records for the life of the unit or at least 5 years, whichever is longer.",
+        "waiver": null,
+        "retentionYears": 5,
+        "hauler": "Use a licensed waste hauler and keep manifests.",
+        "permit": "Food establishments are inspected by CDPH. Interceptor rules sit in the plumbing / water code."
+      },
+      "fines": "Food inspection failures (pests, grease, sanitation) are public. Plumbing/FOG citations are separate. Confirm current penalties.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "pest", "label": "Pest control service", "intervalDays": 30},
+        {"type": "health_permit", "label": "Business / food license", "intervalDays": 365}
+      ]
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix, AZ",
+      "state": "AZ",
+      "agency": "City of Phoenix Water Services — FOG program",
+      "verified": "2026-09-21",
+      "confidence": "medium",
+      "sources": [
+        {"label": "City of Phoenix (verify FOG program pages on phoenix.gov)", "url": "https://www.phoenix.gov/"}
+      ],
+      "pumping": {
+        "minimumDays": null,
+        "accumulationRule": "Phoenix FOG guidance uses a 25% hydraulic-capacity rule: pump when FOG and solids reach 25% of designed capacity, or sooner if needed to keep FOG out of the sewer.",
+        "waiver": null,
+        "retentionYears": 3,
+        "hauler": "Use a permitted hauler; keep pumping records for inspectors.",
+        "permit": "Confirm industrial waste / FOG enrollment with Water Services."
+      },
+      "fines": "Confirm current enforcement with Phoenix Water Services.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
+        {"type": "health_permit", "label": "Maricopa County health permit", "intervalDays": 365}
+      ]
+    },
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles, CA",
+      "state": "CA",
+      "agency": "LASAN FOG Control / LA County Public Works Industrial Waste (unincorporated)",
+      "verified": "2026-09-21",
+      "confidence": "medium",
+      "sources": [
+        {"label": "LA County restaurant pretreatment guidelines (PDF)", "url": "https://dpw.lacounty.gov/epd/industrial_waste/pdf/misc/restaurantpretreatmentguidelines.pdf"},
+        {"label": "LA County Industrial Waste", "url": "https://dpw.lacounty.gov/epd/industrial_waste/"}
+      ],
+      "pumping": {
+        "minimumDays": null,
+        "accumulationRule": "25% rule: pump before floating FOG + settled solids reach 25% of liquid depth. High-volume fry programs often need 14–30 days in practice. City of LA FSEs typically need an industrial wastewater permit.",
+        "waiver": "Alternative grease-recovery devices may be allowed with agency approval if a gravity interceptor cannot be installed.",
+        "retentionYears": 3,
+        "hauler": "Certified/licensed hauler. Keep manifests.",
+        "permit": "City of LA: LASAN industrial wastewater permit. Unincorporated county: IWDP via Public Works."
+      },
+      "fines": "City sources cite FOG fines that can reach $1,000–$10,000/day. Confirm current schedule with LASAN or County Public Works.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 30},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
+        {"type": "health_permit", "label": "Public health permit", "intervalDays": 365}
+      ]
+    }
+  ]
+}
