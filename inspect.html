@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant inspection search — ProofKitchen</title>
+  <meta name="description" content="Search NYC and Chicago restaurant health inspections and filter pest, grease, or hood citations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html"><b>ProofKitchen</b><span>inspection logs</span></a>
+      <nav class="site">
+        <a href="guides/index.html">City rules</a>
+        <a href="log.html">Logbook</a>
+        <a href="inspect.html">Inspection search</a>
+        <a href="vendors.html">For vendors</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+    </header>
+
+<p class="kicker">Public records</p>
+<h1 style="font-family:var(--serif)">NYC &amp; Chicago inspection search</h1>
+<p class="lede">Live open data. Filter by pest, grease, or hood language. Copy a lead as name + address only.</p>
+<div class="card no-print">
+  <label>Restaurant, street, or ZIP</label>
+  <input id="q" placeholder="e.g. Canal, 60647, Saraghina">
+  <div class="toolbar">
+    <select id="city" style="max-width:220px">
+      <option value="both">NYC + Chicago</option>
+      <option value="nyc">NYC only</option>
+      <option value="chicago">Chicago only</option>
+    </select>
+    <select id="tag" style="max-width:220px">
+      <option value="all">All violations</option>
+      <option value="pest">Pest</option>
+      <option value="grease">Grease / FOG</option>
+      <option value="hood">Hood / exhaust</option>
+    </select>
+    <button class="btn stamp" id="go">Search</button>
+  </div>
+  <p class="fine">Official sources: NYC DOHMH 43nn-pn8j and Chicago CDPH 4ijn-s7e5. We do not sell skip-traced phone numbers.</p>
+</div>
+<div id="results" class="stack" style="margin-top:16px"></div>
+<div class="card" style="margin-top:24px">
+  <h3>Vendors: daily typed digest</h3>
+  <p>Founding rate $129/month per metro when billing is on. Leave your details.</p>
+  <form id="vendor-form">
+    <label>Name</label><input id="v-name" required>
+    <label>Email</label><input id="v-email" type="email" required>
+    <label>Metro</label>
+    <select id="v-metro"><option>NYC</option><option>Chicago</option><option>Both</option></select>
+    <label>Trade</label>
+    <select id="v-trade"><option>Pest control</option><option>Grease pumping</option><option>Hood cleaning</option><option>Fire suppression</option></select>
+    <div class="toolbar"><button class="btn" type="submit">Join founding waitlist</button></div>
+  </form>
+  <p class="fine" id="vendor-msg"></p>
+</div>
+<script src="assets/common.js"></script>
+<script src="assets/inspect.js"></script>
+
+    <footer class="site">
+      <p>ProofKitchen is an information tool, not a lawyer, inspector, or city agency. Always keep original manifests and confirm rules with the AHJ. Data: NYC DOHMH and Chicago CDPH open data; city ordinance pages cited on each guide.</p>
+      <p>© 2026 ProofKitchen · <a href="legal.html">Terms</a></p>
+    </footer>
+  </div>
+</body>
+</html>
