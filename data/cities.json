@@ -170,6 +170,59 @@
         {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
         {"type": "health_permit", "label": "Public health permit", "intervalDays": 365}
       ]
+    },
+    {
+      "slug": "san-antonio",
+      "name": "San Antonio, TX",
+      "state": "TX",
+      "agency": "San Antonio Water System (SAWS) — Pretreatment / FOG",
+      "verified": "2026-09-21",
+      "confidence": "medium",
+      "sources": [
+        {"label": "SAWS FOG / pretreatment", "url": "https://www.sa.gov/Directory/Departments/SAWS/Water-Services/Pretreatment/FOG"}
+      ],
+      "pumping": {
+        "minimumDays": 90,
+        "accumulationRule": "Pump sooner when 25% or more of wetted height is floating FOG plus solids. SAWS materials treat 90 days as a backstop, not a target for heavy kitchens.",
+        "waiver": null,
+        "retentionYears": 3,
+        "hauler": "Licensed hauler; keep manifests on site.",
+        "permit": "Confirm FOG / pretreatment enrollment with SAWS."
+      },
+      "fines": "Notices of violation and fines are used for missed pumping or sewer backups. Confirm current amounts with SAWS.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease trap", "intervalDays": 90},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
+        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+      ]
+    },
+    {
+      "slug": "miami-dade",
+      "name": "Miami-Dade County, FL",
+      "state": "FL",
+      "agency": "Miami-Dade Water and Sewer — FOG Control (Code §24-42.6)",
+      "verified": "2026-09-21",
+      "confidence": "medium",
+      "sources": [
+        {"label": "Miami-Dade grease discharge permitting", "url": "https://www.miamidade.gov/permits/grease-discharge.asp"},
+        {"label": "Ordinance file 180026 (FOG control)", "url": "http://www.miamidade.gov/govaction/matter.asp?file=true&fileAnalysis=false&matter=180026&yearFolder=Y2018"}
+      ],
+      "pumping": {
+        "minimumDays": 60,
+        "accumulationRule": "FOG capacity limit is 25% of design hydraulic depth (combined FOG + solids). Gravity interceptors are generally cleaned every 60 days or sooner to stay under 25%. Manual interceptors are typically monthly. Alternative frequencies may be approved, not to exceed 90 days.",
+        "waiver": "Engineering analysis / field study can support an alternative frequency, capped at 90 days.",
+        "retentionYears": 3,
+        "hauler": "Use a permitted hauler unless a small interceptor qualifies for a self-cleaning exception. Keep logs.",
+        "permit": "Annual FOG Discharge Control operating permit for qualifying FSEs."
+      },
+      "fines": "Confirm current penalties with Miami-Dade WASD / permitting.",
+      "defaultAssets": [
+        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 60},
+        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
+        {"type": "pest", "label": "Pest control service", "intervalDays": 30},
+        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+      ]
     }
   ]
 }
