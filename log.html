@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen logbook — ProofKitchen</title>
+  <meta name="description" content="Track grease interceptor pumping, hood cleaning, Ansul, permits, and print an inspector pack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html"><b>ProofKitchen</b><span>inspection logs</span></a>
+      <nav class="site">
+        <a href="guides/index.html">City rules</a>
+        <a href="log.html">Logbook</a>
+        <a href="inspect.html">Inspection search</a>
+        <a href="vendors.html">For vendors</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+    </header>
+
+<p class="kicker">Logbook</p>
+<h1 style="font-family:var(--serif);letter-spacing:-.03em">Kitchen logbook</h1>
+<p class="lede">Stored in this browser only until you export a backup. Nothing is uploaded.</p>
+<div class="card no-print">
+  <h3>New kitchen</h3>
+  <label>Name</label><input id="k-name" placeholder="Rosa’s Tacos">
+  <label>Address</label><input id="k-address" placeholder="123 Main St">
+  <label>City rules to prefill</label><select id="k-city"></select>
+  <div class="toolbar">
+    <button class="btn stamp" id="add-kitchen">Add kitchen</button>
+    <button class="btn secondary" id="export-json">Export backup</button>
+    <label class="btn secondary" style="margin:0">Import<input id="import-json" type="file" accept="application/json" hidden></label>
+  </div>
+</div>
+<div class="split" style="margin-top:20px">
+  <div id="kitchen-list"></div>
+  <div id="kitchen-main" class="stack"></div>
+</div>
+<script src="assets/common.js"></script>
+<script src="assets/log.js"></script>
+
+    <footer class="site">
+      <p>ProofKitchen is an information tool, not a lawyer, inspector, or city agency. Always keep original manifests and confirm rules with the AHJ. Data: NYC DOHMH and Chicago CDPH open data; city ordinance pages cited on each guide.</p>
+      <p>© 2026 ProofKitchen · <a href="legal.html">Terms</a></p>
+    </footer>
+  </div>
+</body>
+</html>
