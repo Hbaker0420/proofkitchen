@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — ProofKitchen</title>
+  <meta name="description" content="Free restaurant inspection logs. Pro $149/year. Vendor alerts $129/month per metro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html"><b>ProofKitchen</b><span>inspection logs</span></a>
+      <nav class="site">
+        <a href="guides/index.html">City rules</a>
+        <a href="log.html">Logbook</a>
+        <a href="inspect.html">Inspection search</a>
+        <a href="vendors.html">For vendors</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+    </header>
+
+<p class="kicker">Pricing</p>
+<h1 style="font-family:var(--serif)">Cheap enough for a single kitchen.</h1>
+<div class="grid">
+  <article class="card">
+    <h3>Logbook</h3>
+    <div class="price">$0</div>
+    <p>Unlimited kitchens in this browser, city prefills, inspector pack, JSON backup.</p>
+    <a class="btn secondary" href="log.html">Use it</a>
+  </article>
+  <article class="card">
+    <h3>Pro kitchen</h3>
+    <div class="price">$149<span style="font-size:18px">/yr</span></div>
+    <p>Founding $99/year for the first 50. Email reminders, cloud backup, inspector link. Payments not live yet — join below.</p>
+    <form onsubmit="event.preventDefault();const s=loadState();s.waitlist=s.waitlist||[];s.waitlist.push({type:'pro',email:this.email.value,at:new Date().toISOString()});saveState(s);this.after.textContent='Saved locally. We will enable checkout after Stripe is connected.';">
+      <label>Email</label><input name="email" type="email" required>
+      <div class="toolbar"><button class="btn stamp" type="submit">Hold founding price</button></div>
+      <p class="fine" id="after"></p>
+    </form>
+  </article>
+  <article class="card">
+    <h3>Vendor alerts</h3>
+    <div class="price">$129<span style="font-size:18px">/mo</span></div>
+    <p>One metro. Typed public-inspection matches. No phone append. <a href="vendors.html">Details</a></p>
+    <a class="btn" href="inspect.html">Search + waitlist</a>
+  </article>
+</div>
+<script src="assets/common.js"></script>
+
+    <footer class="site">
+      <p>ProofKitchen is an information tool, not a lawyer, inspector, or city agency. Always keep original manifests and confirm rules with the AHJ. Data: NYC DOHMH and Chicago CDPH open data; city ordinance pages cited on each guide.</p>
+      <p>© 2026 ProofKitchen · <a href="legal.html">Terms</a></p>
+    </footer>
+  </div>
+</body>
+</html>
