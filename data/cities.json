@@ -3,10 +3,26 @@
   "nfpa96": {
     "title": "Kitchen exhaust cleaning frequency (NFPA 96, widely republished by fire departments)",
     "rows": [
-      {"volume": "Solid fuel cooking (wood, charcoal)", "frequency": "Monthly", "days": 30},
-      {"volume": "High-volume (wok, 24h, charbroil, steam)", "frequency": "Quarterly", "days": 90},
-      {"volume": "Moderate-volume", "frequency": "Semiannually", "days": 182},
-      {"volume": "Low-volume (churches, day camps, seasonal)", "frequency": "Annually", "days": 365}
+      {
+        "volume": "Solid fuel cooking (wood, charcoal)",
+        "frequency": "Monthly",
+        "days": 30
+      },
+      {
+        "volume": "High-volume (wok, 24h, charbroil, steam)",
+        "frequency": "Quarterly",
+        "days": 90
+      },
+      {
+        "volume": "Moderate-volume",
+        "frequency": "Semiannually",
+        "days": 182
+      },
+      {
+        "volume": "Low-volume (churches, day camps, seasonal)",
+        "frequency": "Annually",
+        "days": 365
+      }
     ],
     "note": "AHJs and insurers may require more frequent cleaning. Keep contractor certificates on site."
   },
@@ -15,12 +31,18 @@
       "slug": "houston",
       "name": "Houston, TX",
       "state": "TX",
-      "agency": "Houston Health Department — Special Waste / FOG Program",
+      "agency": "Houston Health Department \u2014 Special Waste / FOG Program",
       "verified": "2026-09-21",
       "confidence": "high",
       "sources": [
-        {"label": "Houston Health Department FOG / special waste", "url": "https://www.houstonhealth.org/services/permits/special-waste-permits"},
-        {"label": "Code of Ordinances §47-512 (cleaning and maintenance)", "url": "http://houston-tx.elaws.us/code/coor_ch47_artxi_div9_subdiv1_sec47-512"}
+        {
+          "label": "Houston Health Department FOG / special waste",
+          "url": "https://www.houstonhealth.org/services/permits/special-waste-permits"
+        },
+        {
+          "label": "Code of Ordinances \u00a747-512 (cleaning and maintenance)",
+          "url": "http://houston-tx.elaws.us/code/coor_ch47_artxi_div9_subdiv1_sec47-512"
+        }
       ],
       "pumping": {
         "minimumDays": 90,
@@ -30,23 +52,42 @@
         "hauler": "City-permitted transporter only. Generator signs the manifest and keeps copies on site.",
         "permit": "Annual FOG / special waste generator permit; keep on site."
       },
-      "fines": "Citations commonly described in the $250–$2,000 per offense range — confirm current amounts with the city.",
+      "fines": "Citations commonly described in the $250\u2013$2,000 per offense range \u2014 confirm current amounts with the city.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
-        {"type": "health_permit", "label": "Health / food dealer permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Health / food dealer permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
       "slug": "austin",
       "name": "Austin, TX",
       "state": "TX",
-      "agency": "Austin Water — Grease Trap Maintenance",
-      "verified": "2026-09-21",
+      "agency": "Austin Water \u2014 Grease Trap Maintenance",
+      "verified": "2026-09-22",
       "confidence": "high",
       "sources": [
-        {"label": "Austin Water grease trap maintenance", "url": "https://www.austintexas.gov/water/grease-trap-maintenance"}
+        {
+          "label": "Austin Water grease trap maintenance",
+          "url": "https://www.austintexas.gov/water/grease-trap-maintenance"
+        }
       ],
       "pumping": {
         "minimumDays": 90,
@@ -58,21 +99,40 @@
       },
       "fines": "Fines and permit action are possible. Confirm current penalties with Austin Water / 311.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease trap", "intervalDays": 90},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
-        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease trap",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Health permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
       "slug": "dallas",
       "name": "Dallas, TX",
       "state": "TX",
-      "agency": "Dallas Water Utilities — Liquid Waste / Pretreatment",
+      "agency": "Dallas Water Utilities \u2014 Liquid Waste / Pretreatment",
       "verified": "2026-09-21",
       "confidence": "high",
       "sources": [
-        {"label": "Dallas Water Utilities pretreatment FAQs", "url": "https://dallascityhall.com/departments/waterutilities/pretreatmentprogram/Pages/faqs2.aspx"}
+        {
+          "label": "Dallas Water Utilities pretreatment FAQs",
+          "url": "https://dallascityhall.com/departments/waterutilities/pretreatmentprogram/Pages/faqs2.aspx"
+        }
       ],
       "pumping": {
         "minimumDays": 90,
@@ -80,14 +140,30 @@
         "waiver": null,
         "retentionYears": 3,
         "hauler": "City of Dallas-permitted liquid waste transporter. Keep manifests on site.",
-        "permit": "Liquid waste generator requirements per Chapter 19 — confirm your permit status."
+        "permit": "Liquid waste generator requirements per Chapter 19 \u2014 confirm your permit status."
       },
       "fines": "Inspectors issue citations for missed pumping, bad manifests, or over-25% accumulation. Confirm current fine schedule.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
-        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Health permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
@@ -98,13 +174,22 @@
       "verified": "2026-09-21",
       "confidence": "medium",
       "sources": [
-        {"label": "Chicago FOG control program", "url": "https://www.chicago.gov/city/en/depts/water/supp_info/fats-oils-and-grease-fog-control-program.html"},
-        {"label": "Municipal Code interceptors maintenance (18-29-1003.13)", "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2696529"},
-        {"label": "Chicago food inspections open data", "url": "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5"}
+        {
+          "label": "Chicago FOG control program",
+          "url": "https://www.chicago.gov/city/en/depts/water/supp_info/fats-oils-and-grease-fog-control-program.html"
+        },
+        {
+          "label": "Municipal Code interceptors maintenance (18-29-1003.13)",
+          "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2696529"
+        },
+        {
+          "label": "Chicago food inspections open data",
+          "url": "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5"
+        }
       ],
       "pumping": {
         "minimumDays": null,
-        "accumulationRule": "Chicago plumbing code requires interceptors to be maintained 'as often as necessary' — not a fixed 90-day clock. Keep written maintenance records for the life of the unit or at least 5 years, whichever is longer.",
+        "accumulationRule": "Chicago plumbing code requires interceptors to be maintained 'as often as necessary' \u2014 not a fixed 90-day clock. Keep written maintenance records for the life of the unit or at least 5 years, whichever is longer.",
         "waiver": null,
         "retentionYears": 5,
         "hauler": "Use a licensed waste hauler and keep manifests.",
@@ -112,36 +197,124 @@
       },
       "fines": "Food inspection failures (pests, grease, sanitation) are public. Plumbing/FOG citations are separate. Confirm current penalties.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "pest", "label": "Pest control service", "intervalDays": 30},
-        {"type": "health_permit", "label": "Business / food license", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "pest",
+          "label": "Pest control service",
+          "intervalDays": 30
+        },
+        {
+          "type": "health_permit",
+          "label": "Business / food license",
+          "intervalDays": 365
+        }
+      ]
+    },
+    {
+      "slug": "new-york",
+      "name": "New York City, NY",
+      "state": "NY",
+      "agency": "NYC Department of Environmental Protection \u2014 FOG / 15 RCNY \u00a719-11",
+      "verified": "2026-09-22",
+      "confidence": "high",
+      "sources": [
+        {
+          "label": "NYC DEP disposing of grease as a business",
+          "url": "https://www.nyc.gov/site/dep/water/disposing-of-grease-as-a-business.page"
+        },
+        {
+          "label": "15 RCNY \u00a719-11 BMP PDF (non-residential FOG dischargers)",
+          "url": "https://www.nyc.gov/assets/dep/downloads/pdf/water/wastewater/safe-disposal-harmful-products/best-management-practices-non-residential-direct-indirect-discharges-grease-public-sewer-system.pdf"
+        },
+        {
+          "label": "NYC DOHMH restaurant inspections open data",
+          "url": "https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j"
+        }
+      ],
+      "pumping": {
+        "minimumDays": null,
+        "accumulationRule": "No fixed calendar interval. DEP: clean as frequently as necessary to avoid exceeding rated capacity. 15 RCNY \u00a719-11(q): maintain in good working order with routine FOG and solids removal; the minimum cleaning frequency is such that accumulated fat, oil, grease, and solids do not exceed 25% of the total liquid depth the unit was designed to hold. Emulsifiers, enzymes, chemicals, and microbial additives are prohibited (\u00a719-11(u)).",
+        "waiver": "NYS PE or RA may petition the Commissioner for an equivalent alternative pretreatment device (\u00a719-11(r)); it cannot be less stringent.",
+        "retentionYears": 1,
+        "hauler": "Scoop accumulated grease for recycling by a fat renderer / BIC Trade Waste Approved Company. Yellow grease (waste cooking oil) must be collected by a BIC-licensed carter; written proof of each pickup must be kept on site at least one year (\u00a719-11(v)).",
+        "permit": "Interceptors / automatic grease removal devices must be installed by an NYC Licensed Master Plumber. Commercial food waste disposers are not allowed in NYC. Units must stay accessible for DEP inspection."
+      },
+      "fines": "DEP states the maximum penalty for not complying is currently $10,000 per day, per violation. Confirm current amounts with DEP.",
+      "defaultAssets": [
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "pest",
+          "label": "Pest control service",
+          "intervalDays": 30
+        },
+        {
+          "type": "health_permit",
+          "label": "DOHMH food service permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
       "slug": "phoenix",
       "name": "Phoenix, AZ",
       "state": "AZ",
-      "agency": "City of Phoenix Water Services — FOG program",
-      "verified": "2026-09-21",
-      "confidence": "medium",
+      "agency": "City of Phoenix Water Services \u2014 Environmental Services Division (FOG)",
+      "verified": "2026-09-22",
+      "confidence": "high",
       "sources": [
-        {"label": "City of Phoenix (verify FOG program pages on phoenix.gov)", "url": "https://www.phoenix.gov/"}
+        {
+          "label": "Phoenix FOG BMP Manual for food service establishments (June 2024 PDF)",
+          "url": "https://www.phoenix.gov/content/dam/phoenix/waterservicessite/documents/FOG_BMP_Manual_2024_06.pdf"
+        }
       ],
       "pumping": {
-        "minimumDays": null,
-        "accumulationRule": "Phoenix FOG guidance uses a 25% hydraulic-capacity rule: pump when FOG and solids reach 25% of designed capacity, or sooner if needed to keep FOG out of the sewer.",
-        "waiver": null,
+        "minimumDays": 30,
+        "accumulationRule": "Most interceptors stop working effectively when FOG and solids reach 25% of capacity; if greater than 25%, a full cleaning is required. Hydromechanical (indoor traps, typically \u22644 fixtures): fully pump every 30 days; no hydromechanical unit may go more than 90 days without maintenance unless the Director grants a variance. Gravity interceptors at food service establishments that capture FOG: fully pump at least once every 3 months unless a Director variance. New facilities should monitor accumulation and pump sooner if needed. Full pump-out by a licensed pumper; interceptor left empty; no reintroduction of water; enzymes/emulsifiers prohibited.",
+        "waiver": "Director may grant a variance from the calendar frequency. Hydromechanical units still may not exceed 90 days without maintenance.",
         "retentionYears": 3,
-        "hauler": "Use a permitted hauler; keep pumping records for inspectors.",
-        "permit": "Confirm industrial waste / FOG enrollment with Water Services."
+        "hauler": "Licensed pumper. FOG mat, liquids, sludge, and scrapings go to a licensed waste disposal facility.",
+        "permit": "All Phoenix FSEs that prepare food must have a grease interceptor. Hydro for up to four fixtures without a disposer or dishwasher; gravity required if a disposer, dishwasher, or more than four fixtures. Interceptor installs go through Planning and Development plan review."
       },
-      "fines": "Confirm current enforcement with Phoenix Water Services.",
+      "fines": "Inspectors can require clean/replace/repair with a deadline. Confirm current penalty amounts with Phoenix Environmental Services. City Code Chapter 28 is the underlying ordinance (cited in the June 2024 BMP).",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 90},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
-        {"type": "health_permit", "label": "Maricopa County health permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor (hydro default 30d)",
+          "intervalDays": 30
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Maricopa County health permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
@@ -152,34 +325,59 @@
       "verified": "2026-09-21",
       "confidence": "medium",
       "sources": [
-        {"label": "LA County restaurant pretreatment guidelines (PDF)", "url": "https://dpw.lacounty.gov/epd/industrial_waste/pdf/misc/restaurantpretreatmentguidelines.pdf"},
-        {"label": "LA County Industrial Waste", "url": "https://dpw.lacounty.gov/epd/industrial_waste/"}
+        {
+          "label": "LA County restaurant pretreatment guidelines (PDF)",
+          "url": "https://dpw.lacounty.gov/epd/industrial_waste/pdf/misc/restaurantpretreatmentguidelines.pdf"
+        },
+        {
+          "label": "LA County Industrial Waste",
+          "url": "https://dpw.lacounty.gov/epd/industrial_waste/"
+        }
       ],
       "pumping": {
         "minimumDays": null,
-        "accumulationRule": "25% rule: pump before floating FOG + settled solids reach 25% of liquid depth. High-volume fry programs often need 14–30 days in practice. City of LA FSEs typically need an industrial wastewater permit.",
+        "accumulationRule": "25% rule: pump before floating FOG + settled solids reach 25% of liquid depth. High-volume fry programs often need 14\u201330 days in practice. City of LA FSEs typically need an industrial wastewater permit.",
         "waiver": "Alternative grease-recovery devices may be allowed with agency approval if a gravity interceptor cannot be installed.",
         "retentionYears": 3,
         "hauler": "Certified/licensed hauler. Keep manifests.",
         "permit": "City of LA: LASAN industrial wastewater permit. Unincorporated county: IWDP via Public Works."
       },
-      "fines": "City sources cite FOG fines that can reach $1,000–$10,000/day. Confirm current schedule with LASAN or County Public Works.",
+      "fines": "City sources cite FOG fines that can reach $1,000\u2013$10,000/day. Confirm current schedule with LASAN or County Public Works.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 30},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
-        {"type": "health_permit", "label": "Public health permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 30
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Public health permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
       "slug": "san-antonio",
       "name": "San Antonio, TX",
       "state": "TX",
-      "agency": "San Antonio Water System (SAWS) — Pretreatment / FOG",
+      "agency": "San Antonio Water System (SAWS) \u2014 Pretreatment / FOG",
       "verified": "2026-09-21",
       "confidence": "medium",
       "sources": [
-        {"label": "SAWS FOG / pretreatment", "url": "https://www.sa.gov/Directory/Departments/SAWS/Water-Services/Pretreatment/FOG"}
+        {
+          "label": "SAWS FOG / pretreatment",
+          "url": "https://www.sa.gov/Directory/Departments/SAWS/Water-Services/Pretreatment/FOG"
+        }
       ],
       "pumping": {
         "minimumDays": 90,
@@ -191,22 +389,44 @@
       },
       "fines": "Notices of violation and fines are used for missed pumping or sewer backups. Confirm current amounts with SAWS.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease trap", "intervalDays": 90},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "ansul", "label": "Fire suppression inspection", "intervalDays": 182},
-        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease trap",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Health permit",
+          "intervalDays": 365
+        }
       ]
     },
     {
       "slug": "miami-dade",
       "name": "Miami-Dade County, FL",
       "state": "FL",
-      "agency": "Miami-Dade Water and Sewer — FOG Control (Code §24-42.6)",
+      "agency": "Miami-Dade Water and Sewer \u2014 FOG Control (Code \u00a724-42.6)",
       "verified": "2026-09-21",
       "confidence": "medium",
       "sources": [
-        {"label": "Miami-Dade grease discharge permitting", "url": "https://www.miamidade.gov/permits/grease-discharge.asp"},
-        {"label": "Ordinance file 180026 (FOG control)", "url": "http://www.miamidade.gov/govaction/matter.asp?file=true&fileAnalysis=false&matter=180026&yearFolder=Y2018"}
+        {
+          "label": "Miami-Dade grease discharge permitting",
+          "url": "https://www.miamidade.gov/permits/grease-discharge.asp"
+        },
+        {
+          "label": "Ordinance file 180026 (FOG control)",
+          "url": "http://www.miamidade.gov/govaction/matter.asp?file=true&fileAnalysis=false&matter=180026&yearFolder=Y2018"
+        }
       ],
       "pumping": {
         "minimumDays": 60,
@@ -218,10 +438,26 @@
       },
       "fines": "Confirm current penalties with Miami-Dade WASD / permitting.",
       "defaultAssets": [
-        {"type": "grease_interceptor", "label": "Grease interceptor", "intervalDays": 60},
-        {"type": "hood", "label": "Hood & duct cleaning", "intervalDays": 90},
-        {"type": "pest", "label": "Pest control service", "intervalDays": 30},
-        {"type": "health_permit", "label": "Health permit", "intervalDays": 365}
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 60
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "pest",
+          "label": "Pest control service",
+          "intervalDays": 30
+        },
+        {
+          "type": "health_permit",
+          "label": "Health permit",
+          "intervalDays": 365
+        }
       ]
     }
   ]
