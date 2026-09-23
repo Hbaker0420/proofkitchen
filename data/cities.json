@@ -126,20 +126,24 @@
       "name": "Dallas, TX",
       "state": "TX",
       "agency": "Dallas Water Utilities \u2014 Liquid Waste / Pretreatment",
-      "verified": "2026-09-21",
+      "verified": "2026-09-23",
       "confidence": "high",
       "sources": [
         {
           "label": "Dallas Water Utilities pretreatment FAQs",
           "url": "https://dallascityhall.com/departments/waterutilities/pretreatmentprogram/Pages/faqs2.aspx"
+        },
+        {
+          "label": "Dallas City Code Chapter 19, Sec. 19-126.2 (amlegal)",
+          "url": "https://codelibrary.amlegal.com/codes/dallas/latest/dallas_tx/0-0-0-110074"
         }
       ],
       "pumping": {
         "minimumDays": 90,
-        "accumulationRule": "Pump sooner whenever floating FOG plus settled solids reach 25% of design capacity / liquid depth.",
+        "accumulationRule": "As often as necessary but not less than every 90 days, or whenever 25% or more of the interceptor contains floating materials, sediment, oils, or grease (Dallas City Code Chapter 19, Sec. 19-126.2(c); pretreatment FAQ). Completely emptied and cleaned by a licensed hauler.",
         "waiver": null,
-        "retentionYears": 3,
-        "hauler": "City of Dallas-permitted liquid waste transporter. Keep manifests on site.",
+        "retentionYears": null,
+        "hauler": "Liquid waste hauler licensed by the Texas Commission on Environmental Quality and Dallas Water Utilities. Keep manifests on site.",
         "permit": "Liquid waste generator requirements per Chapter 19 \u2014 confirm your permit status."
       },
       "fines": "Inspectors issue citations for missed pumping, bad manifests, or over-25% accumulation. Confirm current fine schedule.",
@@ -147,6 +151,55 @@
         {
           "type": "grease_interceptor",
           "label": "Grease interceptor",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "Health permit",
+          "intervalDays": 365
+        }
+      ]
+    },
+    {
+      "slug": "fort-worth",
+      "name": "Fort Worth, TX",
+      "state": "TX",
+      "agency": "City of Fort Worth Water \u2014 Pretreatment / Grease Traps",
+      "verified": "2026-09-23",
+      "confidence": "high",
+      "sources": [
+        {
+          "label": "Fort Worth grease traps program",
+          "url": "https://www.fortworthtexas.gov/departments/water/wastewater/grease-traps"
+        },
+        {
+          "label": "Fort Worth City Code Chapter 12.5 Article VII (amlegal)",
+          "url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-12958"
+        }
+      ],
+      "pumping": {
+        "minimumDays": 90,
+        "accumulationRule": "Completely empty at least once every ninety (90) days, or more often if required to protect the wastewater system. The city grease-trap program page does not state a 25% accumulation trigger.",
+        "waiver": null,
+        "retentionYears": 5,
+        "hauler": "City-authorized liquid waste transporters only; use city trip tickets.",
+        "permit": "Food establishments need a restaurant wastewater discharge permit before discharging to the sanitary sewer (Chapter 12.5 Article VII / \u00a712.5-731)."
+      },
+      "fines": "The city grease-trap page describes penalties of up to $2,000 per violation per day. Confirm current amounts with Pretreatment.",
+      "defaultAssets": [
+        {
+          "type": "grease_interceptor",
+          "label": "Grease trap",
           "intervalDays": 90
         },
         {
