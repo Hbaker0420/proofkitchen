@@ -423,24 +423,32 @@
       "slug": "san-antonio",
       "name": "San Antonio, TX",
       "state": "TX",
-      "agency": "San Antonio Water System (SAWS) \u2014 Pretreatment / FOG",
-      "verified": "2026-09-21",
-      "confidence": "medium",
+      "agency": "San Antonio Water System (SAWS) \u2014 FOG Abatement Program",
+      "verified": "2026-09-24",
+      "confidence": "high",
       "sources": [
         {
-          "label": "SAWS FOG / pretreatment",
-          "url": "https://www.sa.gov/Directory/Departments/SAWS/Water-Services/Pretreatment/FOG"
+          "label": "SAWS Fats, Oils & Grease Abatement Program",
+          "url": "https://www.saws.org/protecting-our-environment/water-resource-compliance-protection/fog/"
+        },
+        {
+          "label": "SAWS FOG ordinance (Chapter 34, Division 5) PDF",
+          "url": "https://www.saws.org/wp-content/uploads/2019/03/FOGOrdinance6-11Final.pdf"
+        },
+        {
+          "label": "SAWS Grease Procedure Manual (PDF)",
+          "url": "https://apps.saws.org/environment/ResourceProtComp/FOG/docs/SAWSGreaseProcedureManual.pdf"
         }
       ],
       "pumping": {
         "minimumDays": 90,
-        "accumulationRule": "Pump sooner when 25% or more of wetted height is floating FOG plus solids. SAWS materials treat 90 days as a backstop, not a target for heavy kitchens.",
-        "waiver": null,
-        "retentionYears": 3,
-        "hauler": "Licensed hauler; keep manifests on site.",
-        "permit": "Confirm FOG / pretreatment enrollment with SAWS."
+        "accumulationRule": "Sec. 34-527(b): evacuate not less often than every ninety (90) days and within two (2) working days whenever twenty-five (25) percent or more of the wetted height of the interceptor, measured from the bottom of the device to the invert of the outlet pipe, contains floating materials, sediment, fats, oils, or grease. Completely empty the unit. The Grease Procedure Manual restates 90 days or 25% of wetted depth.",
+        "waiver": "FSEs/FPEs operating fewer than 120 days in a calendar year may request written SAWS approval for a calendar frequency less often than 90 days. The 25% / two-working-day trigger still applies (Sec. 34-527(b)(i)).",
+        "retentionYears": 5,
+        "hauler": "Interceptors greater than 100 gallons: SAWS-permitted liquid waste hauler; complete evacuation; dispose only at a permitted facility. Interceptors 100 gallons or less: permitted hauler optional; if self-evacuated, keep a cleaning log (location, type, date/time, quantity, disposal location, employee signature) (Sec. 34-527(c), 34-528).",
+        "permit": "Every FSE/FPE must discharge FOG-bearing fixtures through a code-compliant interceptor (Sec. 34-526). Annual inspection by a licensed plumber or SAWS-approved professional after evacuation, with photos; defects corrected within 90 days (Sec. 34-527(d))."
       },
-      "fines": "Notices of violation and fines are used for missed pumping or sewer backups. Confirm current amounts with SAWS.",
+      "fines": "Class C misdemeanor $200\u2013$2,000 per violation per day; civil penalty up to $5,000 per violation per day. Unremedied notice of violation can lead to water/sewer shutoff (Sec. 34-531). Confirm current practice with SAWS.",
       "defaultAssets": [
         {
           "type": "grease_interceptor",
@@ -509,6 +517,59 @@
         {
           "type": "health_permit",
           "label": "Health permit",
+          "intervalDays": 365
+        }
+      ]
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle, WA",
+      "state": "WA",
+      "agency": "Seattle Public Utilities — FOG / Commercial Kitchens",
+      "verified": "2026-09-24",
+      "confidence": "high",
+      "sources": [
+        {
+          "label": "Seattle Public Utilities FOG: commercial kitchens",
+          "url": "https://www.seattle.gov/utilities/protecting-our-environment/sustainability-tips/fats-oils-and-grease-(fog)/fog-commercial-kitchens"
+        },
+        {
+          "label": "SMC 21.16.310 Pretreatment facilities (municode)",
+          "url": "https://www.municode.com/library/wa/seattle/codes/municipal_code?nodeId=TIT21UT_SUBTITLE_IISE_CH21.16SISE_21.16.310PRFA"
+        },
+        {
+          "label": "SMC 21.16.300 Prohibited discharges (municode)",
+          "url": "https://www.municode.com/library/wa/seattle/codes/municipal_code?nodeId=TIT21UT_SUBTITLE_IISE_CH21.16SISE_21.16.300PRDICESU"
+        }
+      ],
+      "pumping": {
+        "minimumDays": null,
+        "accumulationRule": "No fixed calendar interval on the SPU commercial-kitchens page. Clean per manufacturer specifications; if specs are not available, no more than 25 percent of an interceptor should contain food or FOG buildup. SMC 21.16.310 B (as quoted by SPU): clean when more than 25 percent full of grease and food waste. Each business sets a schedule from buildup rate. Emulsifying agents, enzymes, bio-additives, or similar chemicals are prohibited (SMC 21.16.310 D).",
+        "waiver": null,
+        "retentionYears": null,
+        "hauler": "Many businesses use service providers; SPU publishes a FOG service-provider list. The same SPU page also describes self-cleaning indoor units (scoop solids, add absorbent, bag to dumpster). Use a maintenance log (SPU PDF).",
+        "permit": "Any business with commercial kitchen plumbing fixtures and a King County Food Business Permit must install a grease interceptor (SPU; SMC 21.16.310 A). Even small delis, coffee shops, pizza parlors, and caterers."
+      },
+      "fines": "SPU states fees range from $250 to $5,000 for non-compliance. The owner may also have to pay city costs from grease-laden wastewater damage. Confirm current amounts with SPU (greasefreepipes@Seattle.gov).",
+      "defaultAssets": [
+        {
+          "type": "grease_interceptor",
+          "label": "Grease interceptor",
+          "intervalDays": 90
+        },
+        {
+          "type": "hood",
+          "label": "Hood & duct cleaning",
+          "intervalDays": 90
+        },
+        {
+          "type": "ansul",
+          "label": "Fire suppression inspection",
+          "intervalDays": 182
+        },
+        {
+          "type": "health_permit",
+          "label": "King County food business permit",
           "intervalDays": 365
         }
       ]
